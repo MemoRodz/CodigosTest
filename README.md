@@ -50,7 +50,7 @@ Atte. Guillermo Rodríguez
 <img src=https://img.shields.io/badge/twitter-%2300acee.svg?&style=for-the-badge&logo=twitter&logoColor=white alt="twitter" style="margin-bottom: 5px;" />
 </a>
 <a href="mailto:gmo.rodriguez@gmail.com" target="_blank">
-<img src='https://drive.google.com/file/d/1AXnSOxIctvBK9LesZcBWBWHyCvMCuaJy/view?usp=sharing' alt=Email style="margin-bottom: 5px;" />
+<img src='http://drive.google.com/uc?export=view&id=1AXnSOxIctvBK9LesZcBWBWHyCvMCuaJy' alt=Email style="margin-bottom: 5px;" />
 </a>    
 <a href="https://linkedin.com/in/guillermo-rodríguez-74b10039" target="_blank">
 <img src=https://img.shields.io/badge/linkedin-%231E77B5.svg?&style=for-the-badge&logo=linkedin&logoColor=white alt="linkedin" style="margin-bottom: 5px;" />
