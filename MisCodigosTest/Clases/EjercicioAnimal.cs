@@ -7,7 +7,7 @@ namespace MisCodigosTest.Clases
         public static void Animales()
         {
             Console.WriteLine("Bienvenido a la aplicación de animales.");
-            Console.WriteLine("Por favor, elija un animal: \n1) Perro \n2) Gato \n3) Pájaro");
+            Console.WriteLine("Por favor, elija el tipo de animal: \n1) Perro \n2) Gato \n3) Pájaro");
             int opcion = int.Parse(Console.ReadLine());
 
             Animal animal;
