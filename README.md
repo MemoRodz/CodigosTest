@@ -84,7 +84,12 @@ class Circulo{
 <hr />
 Atte. Guillermo Rodríguez 
 
-[Portafolio](https://memorodz.github.io/portfolio/)
+<a href="https://memorodz.github.io/portfolio/" target="_blank">
+    <img src="http://drive.google.com/uc?export=view&id=1CpeJElgV0oVEb8ZWM6x__brPwjfioiYS" alt="Portafolio" style="margin-bottom: 5px;" />
+</a>
+
+<a target="_blank" href="https://icons8.com/icon/BcWr8NBOsovH/portafolio">Portafolio</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
+
 
 <div align="center">
 <a href="https://github.com/memorodz" target="_blank">
