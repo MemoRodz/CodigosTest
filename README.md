@@ -85,6 +85,8 @@ class Circulo{
 
 🚀 Creo que iré actualizando con los que se vayan presentando.
 
+[![GitHub stars](https://img.shields.io/github/stars/tu_usuario/tu_repositorio.svg)](https://github.com/tu_usuario/tu_repositorio/stargazers)
+
 
 <br/>
 
