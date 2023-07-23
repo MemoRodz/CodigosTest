@@ -83,7 +83,7 @@ class Circulo{
 
 <hr />
 
-<div align="justify">Atte. Guillermo Rodríguez </div>
+<div align="justify">**Atte. _Guillermo Rodríguez_** </div>
 
 
 <div align="center">
@@ -94,10 +94,10 @@ class Circulo{
     <img src=https://img.shields.io/badge/twitter-%2300acee.svg?&style=for-the-badge&logo=twitter&logoColor=white alt="twitter" style="margin-bottom: 5px;" />
 </a>
 <a href="mailto:gmo.rodriguez@gmail.com" target="_blank">
-    <img src='http://drive.google.com/uc?export=view&id=1AXnSOxIctvBK9LesZcBWBWHyCvMCuaJy' alt=Email style="margin-bottom: 5px;" height='45px' />
+    <img src='http://drive.google.com/uc?export=view&id=1AXnSOxIctvBK9LesZcBWBWHyCvMCuaJy' alt=Email style="margin-bottom: 5px;" height='35px' />
 </a>    
 <a href="https://memorodz.github.io/portfolio/" target="_blank">
-    <img src="http://drive.google.com/uc?export=view&id=1CpeJElgV0oVEb8ZWM6x__brPwjfioiYS" alt="Portafolio" style="margin-bottom: 5px;" height='45px' />
+    <img src="http://drive.google.com/uc?export=view&id=1CpeJElgV0oVEb8ZWM6x__brPwjfioiYS" alt="Portafolio" style="margin-bottom: 5px;" height='35px' />
 </a>
 <a href="https://linkedin.com/in/guillermo-rodríguez-74b10039" target="_blank">
     <img src=https://img.shields.io/badge/linkedin-%231E77B5.svg?&style=for-the-badge&logo=linkedin&logoColor=white alt="linkedin" style="margin-bottom: 5px;" />
