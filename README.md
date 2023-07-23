@@ -30,6 +30,37 @@ Explicar y Estudiar según el caso.
 
 📌 6. Implementación de Clase Abstracta Animal y sobre escritura de métodos.
 
+📌 7. Implementación de diagrama en código.
+
+```mermaid
+
+---
+title: Forma
+---
+
+classDiagram
+Forma --|> Circulo
+Forma --|> Rectangulo
+Forma --|> Localizacion
+Forma : (#) loc: Localizacion
+Forma : (+) ToString(): string
+Forma : (+) Area() : double
+Forma : (+) Perimetro() : double
+class Localizacion{
+    (-) x : double
+    (-) y : double
+}
+class Rectangulo{
+    (#) lado1 : double
+    (#) lado2 : double
+}
+class Circulo{
+    (#) radio : double
+}
+
+```
+
+
 🚀 Creo que iré actualizando con los que se vayan presentando.
 
 
