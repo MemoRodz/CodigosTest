@@ -62,6 +62,7 @@ class Circulo{
     <img src="./imgrepo/diagramaClaseForma.png" alt="Diagrama de Clases" style="margin-bottom: 5px;" />
 </div>
 
+<br/>
 
 🚀 Creo que iré actualizando con los que se vayan presentando.
 
