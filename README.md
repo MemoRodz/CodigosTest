@@ -32,13 +32,8 @@ Explicar y Estudiar según el caso.
 
 📌 7. Implementación de diagrama en código.
 
-```mermaid
+```classDiagram
 
----
-title: Forma
----
-
-classDiagram
 Forma --|> Circulo
 Forma --|> Rectangulo
 Forma --|> Localizacion
