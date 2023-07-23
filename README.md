@@ -86,7 +86,7 @@ class Circulo{
 <div align="justify">Atte. Guillermo Rodríguez </div>
 <div>
     <a href="https://memorodz.github.io/portfolio/" target="_blank">
-        <img src="http://drive.google.com/uc?export=view&id=1CpeJElgV0oVEb8ZWM6x__brPwjfioiYS" alt="Portafolio" style="margin-bottom: 5px;" />
+        <img src="http://drive.google.com/uc?export=view&id=1CpeJElgV0oVEb8ZWM6x__brPwjfioiYS" alt="Portafolio" style="margin-bottom: 5px;" height='25px' />
     </a>
 </div>
 
@@ -115,3 +115,4 @@ class Circulo{
 <br/>
 
 [![GitHub stars](https://img.shields.io/github/stars/MemoRodz/CodigosTest.svg)](https://github.com/MemoRodz/CodigosTest/stargazers)
+
