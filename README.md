@@ -15,6 +15,19 @@
 
 📌 5. Implementación de Clase Persona y Herencia de otras: Estudiante y Profesor.
 
+<div align="justify">
+Programa que solicita al usuario nombres de personas y los almacena en una lista de objetos de tipo Persona. Habrá dos tipos de persona: Estudiante y Profesor.
+
+Crear la clase Persona con una propiedad Nombre de tipo string, un constructor que reciba el nombre como parámetro, y sobreescibir el método ToString()
+imprimiendo una frase de saludo con el nombre incluido.
+
+Crear dos clases más que hereden de la clase Persona, se llamarán Estudiante y Profesor. La clase Estudiante tiene el método Estudiar que escribe la frase: "Estoy estudiando".
+La clase Profesor tendrá el método Explicar que debe escribir la frase: "Estoy explicando".
+
+El programa debe leer la lista personas (Profesores y estudiantes) ya sea en lote o uno por uno, incluirlas como profesor o estudiante, y finalmente llamar a los métodos 
+Explicar y Estudiar según el caso.
+</div>
+
 📌 6. Implementación de Clase Abstracta Animal y sobre escritura de métodos.
 
 🚀 Creo que iré actualizando con los que se vayan presentando.
