@@ -32,35 +32,13 @@ Explicar y Estudiar según el caso.
 
 📌 7. Implementación de diagrama en código.
 
-```classDiagram
-
-Forma --|> Circulo
-Forma --|> Rectangulo
-Forma --|> Localizacion
-Forma : (#) loc: Localizacion
-Forma : (+) ToString(): string
-Forma : (+) Area() : double
-Forma : (+) Perimetro() : double
-class Localizacion{
-    (-) x : double
-    (-) y : double
-}
-class Rectangulo{
-    (#) lado1 : double
-    (#) lado2 : double
-}
-class Circulo{
-    (#) radio : double
-}
-
-```
 
 ```mermaid
 ---
 title: Clase Forma
 ---
-classDiagram
 
+classDiagram
 Forma --|> Circulo
 Forma --|> Rectangulo
 Forma --|> Localizacion
@@ -84,8 +62,6 @@ class Circulo{
 
 
 🚀 Creo que iré actualizando con los que se vayan presentando.
-
-[![GitHub stars](https://img.shields.io/github/stars/MemoRodz/CodigosTest.svg)](https://github.com/MemoRodz/CodigosTest/stargazers)
 
 
 <br/>
@@ -128,3 +104,7 @@ Atte. Guillermo Rodríguez
 </a>  
 
 </div> 
+
+<br/>
+
+[![GitHub stars](https://img.shields.io/github/stars/MemoRodz/CodigosTest.svg)](https://github.com/MemoRodz/CodigosTest/stargazers)
