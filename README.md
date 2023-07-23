@@ -83,7 +83,7 @@ class Circulo{
 
 <hr />
 
-<div align="justify">**Atte. _Guillermo Rodríguez_** </div>
+<div align="justify"><b>Atte. <i>Guillermo Rodríguez</i><b></div>
 
 
 <div align="center">
