@@ -59,7 +59,7 @@ class Circulo{
 
 ```
 <div>
-    <img src=http://drive.google.com/uc?export=view&id=1iR2cH9r_dZS6eTtfEeD-xiJkuYfGNOpw alt="Diagrama de Clases" style="margin-bottom: 5px;" />
+    <img src="./imgrepo/diagramaClaseForma.png" alt="Diagrama de Clases" style="margin-bottom: 5px;" />
 </div>
 
 
