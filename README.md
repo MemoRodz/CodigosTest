@@ -32,8 +32,7 @@ Explicar y Estudiar según el caso.
 
 📌 7. Implementación de diagrama en código.
 
-
-```mermaid
+```
 ---
 title: Clase Forma
 ---
@@ -59,6 +58,9 @@ class Circulo{
 }
 
 ```
+<div>
+    <img src="http://drive.google.com/uc?export=view&id=1dAw7k8eJ9qkhtq66BKFDTbYyPki3uNJZ" alt="Diagrama de Clases" style="margin-bottom: 5px;" height='150px' />
+</div>
 
 
 🚀 Creo que iré actualizando con los que se vayan presentando.
@@ -70,7 +72,7 @@ class Circulo{
 
 🛸 Lenguaje C#
 
-🛰 .Net 6.0
+🛰 .Net 6
 
 <br/>
 
@@ -84,7 +86,6 @@ class Circulo{
 <hr />
 
 <div align="justify"><b>Atte. <i>Guillermo Rodríguez</i><b></div>
-
 
 <div align="center">
 <a href="https://github.com/memorodz" target="_blank">
