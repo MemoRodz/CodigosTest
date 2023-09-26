@@ -1,6 +1,7 @@
 ﻿using System;
 using MisCodigosTest.CodigoTest;
 using MisCodigosTest.Clases;
+using MisCodigosTest.Clases.Cadena;
 
 //Número Fibonacci
 Fibonacci.numFib();
@@ -71,6 +72,7 @@ Por lo tanto, se asume que la clase "Forma" tiene una relación de dependencia c
 
 */
 
+Console.WriteLine(ObtenSubCadena.Obten());
 
 Console.ReadLine();
 
