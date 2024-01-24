@@ -1,6 +1,6 @@
 # Presentación
 <a href="https://youtu.be/NXci7lByQt0" target="_blank">
-<img align="center" src='http://drive.google.com/uc?export=view&id=1ny61W2dhyKif2NpDl_9FPpwzTiHU0pje' height='70px'>
+<img align="center" src="http://drive.google.com/uc?export=view&id=1ny61W2dhyKif2NpDl_9FPpwzTiHU0pje" height="270px">
 </a>  
 
 ## Algunos ejercicios que se han presentado en mis Test Técnicos C#.
@@ -44,7 +44,7 @@ Atte. Guillermo Rodríguez
 
 <div align="center">
 <a href="https://github.com/memorodz" target="_blank">
-<img src=https://img.shields.io/badge/github-%2324292e.svg?&style=for-the-badge&logo=github&logoColor=white alt="github" style="margin-bottom: 5px;" />
+<img src="https://img.shields.io/badge/github-%2324292e.svg?&style=for-the-badge&logo=github&logoColor=white" alt="github" style="margin-bottom: 5px;" />
 </a>
 <a href="https://twitter.com/memosrdz" target="_blank">
 <img src=https://img.shields.io/badge/twitter-%2300acee.svg?&style=for-the-badge&logo=twitter&logoColor=white alt="twitter" style="margin-bottom: 5px;" />
