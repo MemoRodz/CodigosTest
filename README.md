@@ -1,7 +1,5 @@
 # Presentación
-<a href="https://youtu.be/NXci7lByQt0" target="_blank">
-<img align="center" src="http://drive.google.com/uc?export=view&id=1ny61W2dhyKif2NpDl_9FPpwzTiHU0pje" height="270px">
-</a>  
+<img align="center" src="http://drive.google.com/uc?export=view&id=1ny61W2dhyKif2NpDl_9FPpwzTiHU0pje" height="270px">  
 
 ## Algunos ejercicios que se han presentado en mis Test Técnicos C#.
 
