@@ -11,11 +11,22 @@ namespace MisCodigosTest.CodigoTest
         public static void numeros()
         {
             Console.WriteLine("Ingrese un número entero:");
-            int numero = int.Parse(Console.ReadLine());
-
-            int sumaDigitos = CalcularSumaDigitos(numero);
-
+            string entrada = Console.ReadLine();
+            int numero = 0;
+            int sumaDigitos = 0;
+            if (int.TryParse(entrada, out numero))
+            {
+                sumaDigitos = CalcularSumaDigitos(numero);
             Console.WriteLine("La suma de los dígitos es: " + sumaDigitos);
+
+            }
+            else
+            {
+                Console.WriteLine("Debes introducir un número entero.");
+            }
+
+
+
         }
 
         static int CalcularSumaDigitos(int numero)

@@ -20,15 +20,15 @@ namespace MisCodigosTest.Clases
 
                 Console.WriteLine("Ingrese el nombre de la persona:");
                 //persona.Nombre = Console.ReadLine();
-                string nombre = Console.ReadLine();
+                string? nombre = Console.ReadLine();
 
                 Console.WriteLine("Ingrese el género de la persona:");
                 //persona.Genero = Console.ReadLine();
-                string genero = Console.ReadLine();
+                string? genero = Console.ReadLine();
 
                 Console.WriteLine("Ingrese el tipo de persona (Estudiante o Profesor):");
                 //persona.TipoPersona = Console.ReadLine();
-                string tipoPersona = Console.ReadLine();
+                string? tipoPersona = Console.ReadLine();
 
                 //personas.Add(persona);
 

@@ -11,7 +11,18 @@ namespace MisCodigosTest.CodigoTest
 
         public static void numFib()
         {
-            Console.WriteLine("Hasta que número Fibonacci deseas:");
+            Console.WriteLine("Hasta que número Fibonacci deseas ('S' para salir):");
+            string? entrada = Console.ReadLine();
+            if (string.IsNullOrEmpty(entrada) || string.IsNullOrWhiteSpace(entrada))
+            {
+                Console.WriteLine("No se aceptan espacios en blanco o vacíos.");
+                return;
+            }
+            if(entrada == "s")
+            {
+                Console.WriteLine("\nRegresando al menú.");
+                return;
+            }
             int n = Convert.ToInt32(Console.ReadLine());
 
             Console.WriteLine("Los primeros " + n + " números de la secuencia de Fibonacci son:");

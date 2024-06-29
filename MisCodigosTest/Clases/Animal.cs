@@ -7,14 +7,14 @@ namespace MisCodigosTest.Clases
     /// </summary>
     internal abstract class Animal
     {
-        public string Nombre { get; set; }
+        public string? Nombre { get; set; }
 
-        public void AsignarNombre(string nombre)
+        public void AsignarNombre(string? nombre)
         {
             Nombre = nombre;
         }
 
-        public string ObtenerNombre()
+        public string? ObtenerNombre()
         {
             return Nombre;
         }
