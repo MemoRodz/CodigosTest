@@ -1,5 +1,5 @@
 # Presentación
-<img align="center" src="http://drive.google.com/uc?export=view&id=1ny61W2dhyKif2NpDl_9FPpwzTiHU0pje" height="270px">  
+<img align="center" src="http://drive.google.com/uc?export=view&id=1b0McyQzF-lHoIryfvafcNxoTK-LJL50l" height="270px">  
 
 ## Algunos ejercicios que se han presentado en mis Test Técnicos C#.
 
