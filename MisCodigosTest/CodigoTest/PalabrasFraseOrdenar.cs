@@ -12,7 +12,7 @@ namespace MisCodigosTest.CodigoTest
         public static void palabrasOrdenar()
         {
             Console.WriteLine("Ingrese una frase:");
-            string frase = Console.ReadLine();
+            string? frase = Console.ReadLine();
 
             // Dividir la frase en palabras
             string[] palabras = frase.Split(' ');
@@ -25,6 +25,8 @@ namespace MisCodigosTest.CodigoTest
 
             // Mostrar la frase ordenada
             Console.WriteLine("Frase ordenada: " + fraseOrdenada);
+
+            Console.WriteLine("\nMenú principal...");
         }
         /*
          using System;

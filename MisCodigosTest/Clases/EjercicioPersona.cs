@@ -20,15 +20,15 @@ namespace MisCodigosTest.Clases
 
                 Console.WriteLine("Ingrese el nombre de la persona:");
                 //persona.Nombre = Console.ReadLine();
-                string nombre = Console.ReadLine();
+                string? nombre = Console.ReadLine();
 
                 Console.WriteLine("Ingrese el género de la persona:");
                 //persona.Genero = Console.ReadLine();
-                string genero = Console.ReadLine();
+                string? genero = Console.ReadLine();
 
                 Console.WriteLine("Ingrese el tipo de persona (Estudiante o Profesor):");
                 //persona.TipoPersona = Console.ReadLine();
-                string tipoPersona = Console.ReadLine();
+                string? tipoPersona = Console.ReadLine();
 
                 //personas.Add(persona);
 
@@ -60,38 +60,20 @@ namespace MisCodigosTest.Clases
 
             foreach (Persona persona in personas)
             {
-                //if (persona.TipoPersona == "Estudiante")
-                //{
-                //    Estudiante estudiante = new Estudiante();
-                //    estudiante.Nombre = persona.Nombre;
-                //    estudiante.Genero = persona.Genero;
-                //    estudiante.TipoPersona = persona.TipoPersona;
-                //    estudiante.Estudiar();
-                //}
-                //else if (persona.TipoPersona == "Profesor")
-                //{
-                //    Profesor profesor = new Profesor();
-                //    profesor.Nombre = persona.Nombre;
-                //    profesor.Genero = persona.Genero;
-                //    profesor.TipoPersona = persona.TipoPersona;
-                //    profesor.Explicar();
-                //}
-                //else
-                //{
-                //    Console.WriteLine("Tipo de persona inválido. Ingrese 'Estudiante' o 'Profesor'.");
-                //    //i--;
-                //}
                 if (persona.TipoPersona == "Estudiante")
                 {
                     Estudiante estudiante = (Estudiante)persona;
+                    Console.WriteLine($"{persona.Nombre} es {persona.Genero} y");
                     estudiante.Estudiar();
                 }
                 else if (persona.TipoPersona == "Profesor")
                 {
                     Profesor profesor = (Profesor)persona;
+                    Console.WriteLine($"{persona.Nombre} es {persona.Genero} y");
                     profesor.Explicar();
                 }
             }
+            Console.WriteLine("\nMenú principal...");
         }
     }
 }

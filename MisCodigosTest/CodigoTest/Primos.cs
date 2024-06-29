@@ -26,6 +26,8 @@ namespace MisCodigosTest.CodigoTest
                     Console.WriteLine(i);
                 }
             }
+
+            Console.WriteLine("\nMenú principal...");
         }
 
         static bool EsPrimo(int numero)
