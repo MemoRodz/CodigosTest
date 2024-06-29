@@ -17,15 +17,15 @@ namespace MisCodigosTest.CodigoTest
             if (int.TryParse(entrada, out numero))
             {
                 sumaDigitos = CalcularSumaDigitos(numero);
-            Console.WriteLine("La suma de los dígitos es: " + sumaDigitos);
-
+                Console.WriteLine("La suma de los dígitos es: " + sumaDigitos);
+                Console.WriteLine("\nMenú principal...");
             }
             else
             {
-                Console.WriteLine("Debes introducir un número entero.");
+                Console.WriteLine("Debes introducir un número entero.\nRegresando al menú.");
             }
 
-
+            return;
 
         }
 

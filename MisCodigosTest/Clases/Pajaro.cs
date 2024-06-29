@@ -7,9 +7,9 @@ namespace MisCodigosTest.Clases
     /// </summary>
     internal class Pajaro : Animal
     {
-        public override void Comer()
+        public override void Comer(string? nombre)
         {
-            Console.WriteLine("El pájaro está picoteando sus semillas.");
+            Console.WriteLine($"El pájaro {nombre} está picoteando sus semillas.");
         }
     }
 }

@@ -25,6 +25,8 @@ namespace MisCodigosTest.CodigoTest
 
             // Mostrar la frase ordenada
             Console.WriteLine("Frase ordenada: " + fraseOrdenada);
+
+            Console.WriteLine("\nMenú principal...");
         }
         /*
          using System;
