@@ -5,7 +5,12 @@
 
 ## Algunos ejercicios que se han presentado en mis Test Técnicos C#.
 
-📌 1. Números de Fibonacci.
+<div align="justify">
+He actualizado un poco el código, ahora en el program he puesto un menú de opciones que permitiran llamar a los métodos al ingresar la opción válida.<br>También agregue más opciones.
+</div>
+
+📌 1. Números de Fibonacci. 
+        Proporciona la serie Fibonacci hasta el número dado.
 
 📌 2. Sumar los dígitos de un número entero.
 
@@ -28,9 +33,24 @@ El programa debe leer la lista personas (Profesores y estudiantes) ya sea en lot
 Explicar y Estudiar según el caso.
 </div>
 
-📌 6. Implementación de Clase Abstracta Animal y sobre escritura de métodos.
+📌 6. Movimiento de mouse. 
+        Método que establece un área para mover aleatoriamente el puntero del mouse y hacer clic con el botón derecho. Esto lo hará cada minuto hasta la hora configurada.
+📌 7. Obtiene la subcadena de la cadena establecida.
 
-📌 7. Implementación de diagrama en código.
+📌 8. Implementación de Clase Abstracta Animal y sobre escritura de métodos.
+
+<div align="justify">
+    Programa que implemente una clase abstracta Animal con una propiedad Nombre de tipo texto y tres métodos:
+        🔖 Asignar Nombre: Recibe un nombre de tipo string.
+        🔖 Obtener Nombre: Devuelve el nombre.
+        🔖 Comer: Método abstracto sin parámetros.
+        
+    📑 Crear mínimo dos clases que implementen la clase Animal y  que sobreescriban el método Comer, este último método deberá imprimir una frase diferente para cada animal. 
+
+    📑 El programa debe permitir al usuario asignar un nombre al animal escogido, crear un nuevo objeto de ese tipo, y usar los métodos para obtener el nombre e indicar que está comiendo llamando al método respectivo.
+</div>
+
+📌 😣. Implementación de diagrama en código. Aún estoy esperando a la inspiración.
 
 ```
 ---

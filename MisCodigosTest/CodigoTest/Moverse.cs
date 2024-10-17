@@ -27,7 +27,7 @@ namespace MisCodigosTest.CodigoTest
         {
             Console.WriteLine("Moviendose poco a poco...");
 
-            int endHr = 20;
+            int endHr = 18;
 
             //Establecer el área máxima de movimiento
             int screenWidth = 400;
