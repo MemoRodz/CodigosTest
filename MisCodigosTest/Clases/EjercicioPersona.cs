@@ -12,12 +12,12 @@ namespace MisCodigosTest.Clases
 
             // Leer los datos de las personas y agregarlas a la lista
             Console.WriteLine("Ingrese los nombres de las personas (escriba 'fin' para terminar):");
-            string nombre = Console.ReadLine();
+            string? nombre = Console.ReadLine();
 
             while(nombre != "fin")
             {
                 Console.WriteLine("¿Es estudiante o profesor? (e/p)");
-                string tipo = Console.ReadLine();
+                string? tipo = Console.ReadLine();
 
                 switch (tipo)
                 {

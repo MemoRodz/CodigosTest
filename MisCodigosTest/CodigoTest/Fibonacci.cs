@@ -9,19 +9,27 @@ namespace MisCodigosTest.CodigoTest
     public class Fibonacci
     {
 
-        public static void numFib()
+        public static void NumFib()
         {
             Console.WriteLine("Hasta que número Fibonacci deseas:");
-            int n = Convert.ToInt32(Console.ReadLine());
+
+
+            string? entrada = Console.ReadLine();
+
+            if (!int.TryParse(entrada, out int n))
+            {
+                n = 7;
+                Console.WriteLine($"No fue un número entero, se usará el valor establecido: {n}");
+            }
 
             Console.WriteLine("Los primeros " + n + " números de la secuencia de Fibonacci son:");
 
             for (int i = 0; i < n; i++)
             {
-                Console.WriteLine(fibonacci(i));
+                Console.WriteLine(FibonacciR(i));
             }
         }
-        static int fibonacci(int n)
+        private static int FibonacciR(int n)
         {
             if (n <= 1)
             {
@@ -29,7 +37,7 @@ namespace MisCodigosTest.CodigoTest
             }
             else
             {
-                return fibonacci(n - 1) + fibonacci(n - 2);
+                return FibonacciR(n - 1) + FibonacciR(n - 2);
             }
         }
 

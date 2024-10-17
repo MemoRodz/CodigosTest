@@ -30,7 +30,7 @@ namespace MisCodigosTest.Clases
             }
 
             Console.WriteLine("Ingrese el nombre del animal:");
-            string nombre = Console.ReadLine();
+            string? nombre = Console.ReadLine();
 
             animal.AsignarNombre(nombre);
 

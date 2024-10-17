@@ -9,14 +9,24 @@ namespace MisCodigosTest.CodigoTest
     public class Primos
     {
 
-        public static void primosRango()
+        public static void PrimosRango()
         {
             Console.WriteLine("Ingrese el número inicial del rango:");
-            int inicio = Convert.ToInt32(Console.ReadLine());
-
+            string? entrada = Console.ReadLine();
+            if(!int.TryParse(entrada, out int inicio))
+            {
+                inicio = 3;
+                Console.WriteLine($"Se usará valor definido {inicio}");
+            }
             Console.WriteLine("Ingrese el número final del rango:");
-            int fin = Convert.ToInt32(Console.ReadLine());
+            entrada = Console.ReadLine();
 
+
+            if (!int.TryParse(entrada, out int fin))
+            {
+                fin = 10;
+                Console.WriteLine($"Se usará valor definido {fin}");
+            }
             Console.WriteLine("Los números primos en el rango de {0} a {1} son:", inicio, fin);
 
             for (int i = inicio; i <= fin; i++)

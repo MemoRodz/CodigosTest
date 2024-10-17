@@ -10,7 +10,7 @@ namespace MisCodigosTest.Clases
         /// Constructor.
         /// </summary>
         /// <param name="nombre">Cadena con nombre de la Persona.</param>
-        public Estudiante(string nombre) : base(nombre)
+        public Estudiante(string? nombre) : base(nombre)
         {
         }
         /// <summary>
