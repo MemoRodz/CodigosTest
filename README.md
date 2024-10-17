@@ -36,6 +36,7 @@ Explicar y Estudiar según el caso.
 
 📌 6. Movimiento de mouse. 
         Método que establece un área para mover aleatoriamente el puntero del mouse y hacer clic con el botón derecho. Esto lo hará cada minuto hasta la hora configurada.
+        
 📌 7. Obtiene la subcadena de la cadena establecida.
 
 📌 8. Implementación de Clase Abstracta Animal y sobre escritura de métodos.
