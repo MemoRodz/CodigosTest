@@ -36,15 +36,18 @@ Explicar y Estudiar según el caso.
 
 📌 6. Movimiento de mouse. 
         Método que establece un área para mover aleatoriamente el puntero del mouse y hacer clic con el botón derecho. Esto lo hará cada minuto hasta la hora configurada.
-        
+
 📌 7. Obtiene la subcadena de la cadena establecida.
 
 📌 8. Implementación de Clase Abstracta Animal y sobre escritura de métodos.
 
 <div align="justify">
     Programa que implemente una clase abstracta Animal con una propiedad Nombre de tipo texto y tres métodos:
+
         🔖 Asignar Nombre: Recibe un nombre de tipo string.
+
         🔖 Obtener Nombre: Devuelve el nombre.
+        
         🔖 Comer: Método abstracto sin parámetros.
         
     📑 Crear mínimo dos clases que implementen la clase Animal y  que sobreescriban el método Comer, este último método deberá imprimir una frase diferente para cada animal. 
