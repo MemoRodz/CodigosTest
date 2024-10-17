@@ -47,12 +47,15 @@ Explicar y Estudiar según el caso.
         🔖 Asignar Nombre: Recibe un nombre de tipo string.
 
         🔖 Obtener Nombre: Devuelve el nombre.
-        
+
         🔖 Comer: Método abstracto sin parámetros.
         
-    📑 Crear mínimo dos clases que implementen la clase Animal y  que sobreescriban el método Comer, este último método deberá imprimir una frase diferente para cada animal. 
+    📑 Crear mínimo dos clases que implementen la clase Animal y  que sobreescriban el método Comer, 
+        este último método deberá imprimir una frase diferente para cada animal. 
 
-    📑 El programa debe permitir al usuario asignar un nombre al animal escogido, crear un nuevo objeto de ese tipo, y usar los métodos para obtener el nombre e indicar que está comiendo llamando al método respectivo.
+    📑 El programa debe permitir al usuario asignar un nombre al animal escogido, 
+        crear un nuevo objeto de ese tipo, y usar los métodos para obtener el nombre 
+        e indicar que está comiendo llamando al método respectivo.
 </div>
 
 📌 😣. Implementación de diagrama en código. Aún estoy esperando a la inspiración.
