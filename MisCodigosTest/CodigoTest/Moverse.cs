@@ -59,5 +59,44 @@ namespace MisCodigosTest.CodigoTest
                 System.Threading.Thread.Sleep(60000);
             }
         }
+
+        public static void Movimiento(int limiteHr)
+        {
+            Console.WriteLine("Cambiando tareas de usuario y moviendose...");
+
+            // Hora límite para realizar la actividad.
+            int endHr = limiteHr;
+            // Minutos
+
+            //Establecer el área máxima de movimiento
+            int screenWidth = 400;
+            int screenHeight = 400;
+
+            Random random = new();
+
+            DateTime endTime = DateTime.Today.AddHours(endHr);
+
+            while (DateTime.Now < endTime)
+            {
+                int x = random.Next(100, screenWidth);
+                int y = random.Next(100, screenHeight);
+
+                bool result = SetCursorPos(x, y);
+
+                //Console.WriteLine(result ? $"Se movió a la posición ({x}, {y}) siendo las {DateTime.Now}." : "¿Algo pasó?");
+                if (result)
+                {
+                    Console.WriteLine($"Se movió a la posición ({x}, {y}) siendo las {DateTime.Now}");
+                    //Activar el botón Derecho
+                    mouse_event(MOUSEEVENTF_RIGHTDOWN | MOUSEEVENTF_RIGHTUP, x, y, 0, 0);
+                }
+                else
+                {
+                    Console.WriteLine("¿Algo pasó?");
+                }
+
+                System.Threading.Thread.Sleep(60000);
+            }
+        }
     }
 }

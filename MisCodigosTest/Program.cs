@@ -16,6 +16,7 @@ while (true)
     Console.WriteLine("6. Establece un área para mover el puntero aleatoriamente y hacer clic derecho.");
     Console.WriteLine("7. Obtener la subcadena establecida.");
     Console.WriteLine("8. Ejercicio Animal.");
+    Console.WriteLine("9. Impresión de Calendarios.");
     Console.WriteLine("S. Salir.");
     Console.Write("Selecciona una opción: ");
 
@@ -83,6 +84,14 @@ while (true)
             está comiendo llamando al método respectivo.
             */
             EjercicioAnimal.Animales();
+            break;
+        case "9":
+            /*
+             Calendario
+                Programa que proporciona el calendario desde el año 1
+                hasta más del año 2500
+            */
+            Calendario.Imprime();
             break;
         case "s":
         case "S":
