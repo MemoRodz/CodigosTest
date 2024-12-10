@@ -21,10 +21,6 @@ namespace MisCodigosTest.CodigoTest
                     // Dividir la frase en palabras
                     string[] palabras = frase.Split(' ');
 
-            Console.WriteLine("Ingrese una frase:");
-            string? frase = Console.ReadLine();
-
-
                     // Ordenar las palabras alfabéticamente
                     Array.Sort(palabras);
 
@@ -43,12 +39,9 @@ namespace MisCodigosTest.CodigoTest
                 Console.WriteLine("No hay palabras para ordenar.");
             }
 
-            // Mostrar la frase ordenada
-            Console.WriteLine("Frase ordenada: " + fraseOrdenada);
-
-            Console.WriteLine("\nMenú principal...");
-
         }
+
+
         /*
          using System;
 

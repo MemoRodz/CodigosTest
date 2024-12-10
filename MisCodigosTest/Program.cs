@@ -19,6 +19,7 @@ while (true)
     Console.WriteLine("8. Ejercicio Animal.");
     Console.WriteLine("9. Impresión de Calendarios.");
     Console.WriteLine("10. <Regex> Validación de RFC.");
+    Console.WriteLine("11. Conversión de número a PESOS Mexicanos.");
     Console.WriteLine("S. Salir.");
     Console.Write("Selecciona una opción: ");
 
@@ -126,6 +127,9 @@ while (true)
                 else
                     Console.WriteLine($"\tEl formato de RFC {rfx} NO válido.");
             });
+            break;
+        case "11":
+            CantConversion.Inicio();
             break;
         case "s":
         case "S":

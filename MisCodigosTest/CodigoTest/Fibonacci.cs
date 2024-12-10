@@ -14,8 +14,9 @@ namespace MisCodigosTest.CodigoTest
 
             Console.WriteLine("Hasta que número Fibonacci deseas:");
             string? entrada = Console.ReadLine();
+            int n = 0;
 
-            if (!int.TryParse(entrada, out int n))
+            if (!int.TryParse(entrada, out n))
             {
                 n = 7;
                 Console.WriteLine($"No fue un número entero, se usará el valor establecido: {n}");
@@ -27,35 +28,35 @@ namespace MisCodigosTest.CodigoTest
             {
                 Console.WriteLine(FibonacciR(i));
 
-            Console.WriteLine("Hasta que número Fibonacci deseas ('S' para salir):");
-            string? entrada = Console.ReadLine();
-            if (string.IsNullOrEmpty(entrada) || string.IsNullOrWhiteSpace(entrada))
-            {
-                Console.WriteLine("No se aceptan espacios en blanco o vacíos.");
-                return;
-            }
-            if (entrada == "s")
-            {
-                Console.WriteLine("\nRegresando al menú.\nPresiona cualquier tecla.");
-                Console.ReadKey();
-                return;
-            }
-            int n = 0;
-            if (int.TryParse(entrada, out n))
-            {
-                Console.WriteLine("Los primeros " + n + " números de la secuencia de Fibonacci son:");
+                Console.WriteLine("Hasta que número Fibonacci deseas ('S' para salir):");
 
-                for (int i = 0; i < n; i++)
+                if (string.IsNullOrEmpty(entrada) || string.IsNullOrWhiteSpace(entrada))
                 {
-                    Console.WriteLine(fibonacci(i));
+                    Console.WriteLine("No se aceptan espacios en blanco o vacíos.");
+                    return;
                 }
-                Console.WriteLine("\nMenú principal...");
+                if (entrada == "s")
+                {
+                    Console.WriteLine("\nRegresando al menú.\nPresiona cualquier tecla.");
+                    Console.ReadKey();
+                    return;
+                }
+                if (int.TryParse(entrada, out n))
+                {
+                    Console.WriteLine("Los primeros " + n + " números de la secuencia de Fibonacci son:");
+
+                    for (int fib = 0; fib < n; fib++)
+                    {
+                        Console.WriteLine(FibonacciR(fib));
+                    }
+                    Console.WriteLine("\nMenú principal...");
+
+                }
+                else Console.WriteLine("No es un entero.\nRegresando.");
 
             }
-            else Console.WriteLine("No es un entero.\nRegresando.");
-            
         }
-          
+
         private static int FibonacciR(int n)
         {
             if (n <= 1)
