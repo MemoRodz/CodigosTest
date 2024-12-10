@@ -17,6 +17,7 @@ while (true)
     Console.WriteLine("7. Obtener la subcadena establecida.");
     Console.WriteLine("8. Ejercicio Animal.");
     Console.WriteLine("9. Impresión de Calendarios.");
+    Console.WriteLine("10. <Regex> Validación de RFC.");
     Console.WriteLine("S. Salir.");
     Console.Write("Selecciona una opción: ");
 
@@ -92,6 +93,38 @@ while (true)
                 hasta más del año 2500
             */
             Calendario.Imprime();
+            break;
+        case "10":
+            /*
+             Validación de Registro Federal de Contribuyentes Mexicano.
+            Con formato de fecha válido, AAMMDD.
+             */
+            List<string> testRFC = new List<string>
+            {
+                "ABC9203151H2",
+                "Ñ&F841122X9C",
+                "A1B2C3D4",
+                "ABÑ910101Z1",
+                "DEF000229A2B",
+                "GHI990331T3",
+                "ABCDE0123",
+                "JKL850101R4F",
+                "1234567890",
+                "M&N940230A1",
+                "OPQ830215G6H",
+                "AB-9203151H2",
+                "RST700101M2X",
+                "XYZ000000",
+                "UVW890215P7",
+            };
+            testRFC.ForEach(rfx => {
+                if (MisCodigosTest.Metodos.Validar.ValidaRFC(rfx))
+                {
+                    Console.WriteLine($"\tEl valor de RFC {rfx} tiene formato válido.");
+                }
+                else
+                    Console.WriteLine($"\tEl formato de RFC {rfx} NO válido.");
+            });
             break;
         case "s":
         case "S":

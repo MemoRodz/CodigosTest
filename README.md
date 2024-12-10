@@ -58,6 +58,10 @@ Explicar y Estudiar según el caso.
         e indicar que está comiendo llamando al método respectivo.
 </div>
 
+📌 9. Calendario. Imprime en pantalla el calendario desde el año 1 hasta más del año 2500.
+
+📌 10. Validación de Registro Federal de Contribuyentes Mexicano, formato de fecha AAMMDD.
+
 📌 😣. Implementación de diagrama en código. Aún estoy esperando a la inspiración.
 
 ```
