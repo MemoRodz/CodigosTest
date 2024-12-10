@@ -28,8 +28,6 @@ namespace MisCodigosTest.Clases
             return "¡Hola! Mi nombre es " + Nombre + ".\n";
         }
 
-
-        public string? Nombre { get; set; }
         public string? Genero { get; set; }
 
         public string? TipoPersona { get; set; }

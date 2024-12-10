@@ -21,13 +21,12 @@ namespace MisCodigosTest.Clases
 
 
                 switch (tipo)
->>>>>>> modificar
                 {
                     case "e":
-                        personas.Add(new Estudiante(nombre));
+                        personas.Add(new Estudiante(tipo));
                         break;
                     case "p":
-                        personas.Add(new Profesor(nombre));
+                        personas.Add(new Profesor(tipo));
                         break;
                     default:
                         Console.WriteLine("No existe '{0}' como opción, {1} no se pudo clasificar.", tipo, nombre);
@@ -36,7 +35,6 @@ namespace MisCodigosTest.Clases
 
                 Console.WriteLine("Ingrese el nombre de la persona:");
                 //persona.Nombre = Console.ReadLine();
-                string? nombre = Console.ReadLine();
 
                 Console.WriteLine("Ingrese el género de la persona:");
                 //persona.Genero = Console.ReadLine();
@@ -78,7 +76,6 @@ namespace MisCodigosTest.Clases
                 Console.WriteLine(persona.ToString());
 
                 if (persona is Estudiante)
->>>>>>> modificar
                 {
                     Estudiante estudiante = (Estudiante)persona;
                     Console.WriteLine($"{persona.Nombre} es {persona.Genero} y");
