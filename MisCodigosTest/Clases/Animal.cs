@@ -7,7 +7,9 @@ namespace MisCodigosTest.Clases
     /// </summary>
     internal abstract class Animal
     {
-        private string? Nombre { get; set; }
+
+        public string? Nombre { get; set; }
+
 
         public void AsignarNombre(string? nombre)
         {
@@ -16,7 +18,14 @@ namespace MisCodigosTest.Clases
 
         public string? ObtenerNombre()
         {
-            return Nombre;
+            if (!string.IsNullOrEmpty(Nombre))
+            {
+                return Nombre;
+            }
+            else
+            {
+                return string.Empty;
+            }
         }
 
         public abstract void Comer(string? nombre);

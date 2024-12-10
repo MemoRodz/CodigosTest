@@ -11,12 +11,28 @@ namespace MisCodigosTest.Clases
             List<Persona> personas = new List<Persona>();
 
             // Leer los datos de las personas y agregarlas a la lista
-            Console.WriteLine("Ingrese el número de personas:");
-            int numeroPersonas = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Ingrese los nombres de las personas (escriba 'fin' para terminar):");
+            string? nombre = Console.ReadLine();
 
-            for (int i = 0; i < numeroPersonas; i++)
+            while(nombre != "fin")
             {
-                Persona persona = new Persona();
+                Console.WriteLine("¿Es estudiante o profesor? (e/p)");
+                string? tipo = Console.ReadLine();
+
+
+                switch (tipo)
+>>>>>>> modificar
+                {
+                    case "e":
+                        personas.Add(new Estudiante(nombre));
+                        break;
+                    case "p":
+                        personas.Add(new Profesor(nombre));
+                        break;
+                    default:
+                        Console.WriteLine("No existe '{0}' como opción, {1} no se pudo clasificar.", tipo, nombre);
+                        break;
+                }
 
                 Console.WriteLine("Ingrese el nombre de la persona:");
                 //persona.Nombre = Console.ReadLine();
@@ -32,46 +48,50 @@ namespace MisCodigosTest.Clases
 
                 //personas.Add(persona);
 
-                if (tipoPersona == "Estudiante")
+
+                /*
+                 Estructura IF ELSE
+                if (tipo == "e")
                 {
-                    Estudiante estudiante = new Estudiante();
-                    estudiante.Nombre = nombre;
-                    estudiante.Genero = genero;
-                    estudiante.TipoPersona = tipoPersona;
-                    personas.Add(estudiante);
+                    personas.Add(new Estudiante(nombre));
                 }
-                else if (tipoPersona == "Profesor")
+                else if (tipo == "p")
                 {
-                    Profesor profesor = new Profesor();
-                    profesor.Nombre = nombre;
-                    profesor.Genero = genero;
-                    profesor.TipoPersona = tipoPersona;
-                    personas.Add(profesor);
+                    personas.Add(new Profesor(nombre));
                 }
                 else
                 {
-                    Console.WriteLine("Tipo de persona inválido. Ingrese 'Estudiante' o 'Profesor'.");
-                    i--;
+                    Console.WriteLine("No existe '{1}' como opción, {2} no se pudo clasificar.");
                 }
+                */
 
+                Console.WriteLine("Nombre de la siguiente persona:");
+                nombre = Console.ReadLine();
             }
 
+            Console.WriteLine();
             // Llamar a los métodos correspondientes de cada persona
 
             foreach (Persona persona in personas)
             {
-                if (persona.TipoPersona == "Estudiante")
+
+                Console.WriteLine(persona.ToString());
+
+                if (persona is Estudiante)
+>>>>>>> modificar
                 {
                     Estudiante estudiante = (Estudiante)persona;
                     Console.WriteLine($"{persona.Nombre} es {persona.Genero} y");
                     estudiante.Estudiar();
                 }
-                else if (persona.TipoPersona == "Profesor")
+                else if (persona is Profesor)
                 {
                     Profesor profesor = (Profesor)persona;
                     Console.WriteLine($"{persona.Nombre} es {persona.Genero} y");
                     profesor.Explicar();
                 }
+
+                Console.WriteLine();
             }
             Console.WriteLine("\nMenú principal...");
         }
