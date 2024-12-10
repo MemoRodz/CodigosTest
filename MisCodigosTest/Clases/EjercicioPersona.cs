@@ -19,7 +19,21 @@ namespace MisCodigosTest.Clases
                 Console.WriteLine("¿Es estudiante o profesor? (e/p)");
                 string? tipo = Console.ReadLine();
 
-<<<<<<< HEAD
+
+                switch (tipo)
+>>>>>>> modificar
+                {
+                    case "e":
+                        personas.Add(new Estudiante(nombre));
+                        break;
+                    case "p":
+                        personas.Add(new Profesor(nombre));
+                        break;
+                    default:
+                        Console.WriteLine("No existe '{0}' como opción, {1} no se pudo clasificar.", tipo, nombre);
+                        break;
+                }
+
                 Console.WriteLine("Ingrese el nombre de la persona:");
                 //persona.Nombre = Console.ReadLine();
                 string? nombre = Console.ReadLine();
@@ -34,21 +48,6 @@ namespace MisCodigosTest.Clases
 
                 //personas.Add(persona);
 
-                if (tipoPersona == "Estudiante")
-=======
-                switch (tipo)
->>>>>>> modificar
-                {
-                    case "e":
-                        personas.Add(new Estudiante(nombre));
-                        break;
-                    case "p":
-                        personas.Add(new Profesor(nombre));
-                        break;
-                    default:
-                        Console.WriteLine("No existe '{0}' como opción, {1} no se pudo clasificar.", tipo, nombre);
-                        break;
-                }
 
                 /*
                  Estructura IF ELSE
@@ -75,9 +74,7 @@ namespace MisCodigosTest.Clases
 
             foreach (Persona persona in personas)
             {
-<<<<<<< HEAD
-                if (persona.TipoPersona == "Estudiante")
-=======
+
                 Console.WriteLine(persona.ToString());
 
                 if (persona is Estudiante)

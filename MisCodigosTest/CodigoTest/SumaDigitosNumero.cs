@@ -11,7 +11,15 @@ namespace MisCodigosTest.CodigoTest
         public static void Numeros()
         {
             Console.WriteLine("Ingrese un número entero:");
-<<<<<<< HEAD
+
+
+            string? entrada = Console.ReadLine();
+
+            if (!int.TryParse(entrada, out int numero))
+            {
+                numero = 369;
+                Console.WriteLine($"No es un entero.\n\tSe usará el número por defecto {numero}");
+
             string entrada = Console.ReadLine();
             int numero = 0;
             int sumaDigitos = 0;
@@ -24,15 +32,7 @@ namespace MisCodigosTest.CodigoTest
             else
             {
                 Console.WriteLine("Debes introducir un número entero.\nRegresando al menú.");
-=======
 
-            string? entrada = Console.ReadLine();
-
-            if (!int.TryParse(entrada, out int numero))
-            {
-                numero = 369;
-                Console.WriteLine($"No es un entero.\n\tSe usará el número por defecto {numero}");
->>>>>>> modificar
             }
 
             return;

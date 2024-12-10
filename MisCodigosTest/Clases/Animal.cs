@@ -7,11 +7,9 @@ namespace MisCodigosTest.Clases
     /// </summary>
     internal abstract class Animal
     {
-<<<<<<< HEAD
-        private string? Nombre { get; set; }
-=======
+
         public string? Nombre { get; set; }
->>>>>>> modificar
+
 
         public void AsignarNombre(string? nombre)
         {

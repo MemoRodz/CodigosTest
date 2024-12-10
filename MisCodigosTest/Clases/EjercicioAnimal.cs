@@ -16,11 +16,9 @@ namespace MisCodigosTest.Clases
             Console.WriteLine("Por favor, elija el tipo de animal: \n1) Perro \n2) Gato \n3) Pájaro");
             int opcion = int.Parse(Console.ReadLine());
 
-            Animal animal;
-
-            switch (opcion)
->>>>>>> modificar
+            if (opcion)
             {
+
 
                 Animal animal;
 
@@ -41,8 +39,10 @@ namespace MisCodigosTest.Clases
                         break;
                 }
 
-                Console.WriteLine("Ingrese el nombre del animal:");
-                string? nombre = Console.ReadLine();
+
+            Console.WriteLine("Ingrese el nombre del animal:");
+            string? nombre = Console.ReadLine();
+
                 if (string.IsNullOrEmpty(nombre) || string.IsNullOrWhiteSpace(nombre))
                 {
                     Console.WriteLine("\nVaya, parece que no le asignaste nombre a tu animal.\t");
@@ -50,22 +50,12 @@ namespace MisCodigosTest.Clases
                 }
                 animal.AsignarNombre(nombre);
 
+
                 Console.WriteLine("El nombre del animal es: " + animal.ObtenerNombre());
                 animal.Comer(animal.ObtenerNombre());
 
             }
-<<<<<<< HEAD
             else Console.WriteLine("\nOpción no válida.\nRegresando al menú.");
-=======
-
-            Console.WriteLine("Ingrese el nombre del animal:");
-            string? nombre = Console.ReadLine();
-
-            animal.AsignarNombre(nombre);
-
-            Console.WriteLine("El nombre del animal es: " + animal.ObtenerNombre());
-            animal.Comer();
->>>>>>> modificar
         }
     }
 }

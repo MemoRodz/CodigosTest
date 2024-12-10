@@ -1,5 +1,6 @@
 # Presentación
 <img align="center" src="https://mega.nz/file/KLBjkSaR#dDdg5CJqSsY545MPoerH_OKgXS0W9eEtFg7V0fT2Yjs" height="270px">  
+<img align="center" src="https://mega.nz/file/KLBjkSaR#dDdg5CJqSsY545MPoerH_OKgXS0W9eEtFg7V0fT2Yjs" height="270px">  
 
 ## Algunos ejercicios que se han presentado en mis Test Técnicos C#.
 

@@ -11,17 +11,8 @@ namespace MisCodigosTest.CodigoTest
 
         public static void NumFib()
         {
-<<<<<<< HEAD
-            Console.WriteLine("Hasta que número Fibonacci deseas ('S' para salir):");
-            string? entrada = Console.ReadLine();
-            if (string.IsNullOrEmpty(entrada) || string.IsNullOrWhiteSpace(entrada))
-            {
-                Console.WriteLine("No se aceptan espacios en blanco o vacíos.");
-                return;
-=======
+
             Console.WriteLine("Hasta que número Fibonacci deseas:");
-
-
             string? entrada = Console.ReadLine();
 
             if (!int.TryParse(entrada, out int n))
@@ -35,7 +26,13 @@ namespace MisCodigosTest.CodigoTest
             for (int i = 0; i < n; i++)
             {
                 Console.WriteLine(FibonacciR(i));
->>>>>>> modificar
+
+            Console.WriteLine("Hasta que número Fibonacci deseas ('S' para salir):");
+            string? entrada = Console.ReadLine();
+            if (string.IsNullOrEmpty(entrada) || string.IsNullOrWhiteSpace(entrada))
+            {
+                Console.WriteLine("No se aceptan espacios en blanco o vacíos.");
+                return;
             }
             if (entrada == "s")
             {
@@ -53,9 +50,12 @@ namespace MisCodigosTest.CodigoTest
                     Console.WriteLine(fibonacci(i));
                 }
                 Console.WriteLine("\nMenú principal...");
+
             }
             else Console.WriteLine("No es un entero.\nRegresando.");
+            
         }
+          
         private static int FibonacciR(int n)
         {
             if (n <= 1)
