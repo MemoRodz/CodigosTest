@@ -19,7 +19,25 @@ namespace MisCodigosTest.Clases
                 Console.WriteLine("¿Es estudiante o profesor? (e/p)");
                 string? tipo = Console.ReadLine();
 
+<<<<<<< HEAD
+                Console.WriteLine("Ingrese el nombre de la persona:");
+                //persona.Nombre = Console.ReadLine();
+                string? nombre = Console.ReadLine();
+
+                Console.WriteLine("Ingrese el género de la persona:");
+                //persona.Genero = Console.ReadLine();
+                string? genero = Console.ReadLine();
+
+                Console.WriteLine("Ingrese el tipo de persona (Estudiante o Profesor):");
+                //persona.TipoPersona = Console.ReadLine();
+                string? tipoPersona = Console.ReadLine();
+
+                //personas.Add(persona);
+
+                if (tipoPersona == "Estudiante")
+=======
                 switch (tipo)
+>>>>>>> modificar
                 {
                     case "e":
                         personas.Add(new Estudiante(nombre));
@@ -57,21 +75,28 @@ namespace MisCodigosTest.Clases
 
             foreach (Persona persona in personas)
             {
+<<<<<<< HEAD
+                if (persona.TipoPersona == "Estudiante")
+=======
                 Console.WriteLine(persona.ToString());
 
                 if (persona is Estudiante)
+>>>>>>> modificar
                 {
                     Estudiante estudiante = (Estudiante)persona;
+                    Console.WriteLine($"{persona.Nombre} es {persona.Genero} y");
                     estudiante.Estudiar();
                 }
                 else if (persona is Profesor)
                 {
                     Profesor profesor = (Profesor)persona;
+                    Console.WriteLine($"{persona.Nombre} es {persona.Genero} y");
                     profesor.Explicar();
                 }
 
                 Console.WriteLine();
             }
+            Console.WriteLine("\nMenú principal...");
         }
     }
 }

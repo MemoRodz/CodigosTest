@@ -1,7 +1,5 @@
 # Presentación
-<a href="https://youtu.be/NXci7lByQt0" target="_blank">
-<img align="center" src='http://drive.google.com/uc?export=view&id=1ny61W2dhyKif2NpDl_9FPpwzTiHU0pje' height='70px'>
-</a>  
+<img align="center" src="https://mega.nz/file/KLBjkSaR#dDdg5CJqSsY545MPoerH_OKgXS0W9eEtFg7V0fT2Yjs" height="270px">  
 
 ## Algunos ejercicios que se han presentado en mis Test Técnicos C#.
 
@@ -122,7 +120,11 @@ class Circulo{
 
 <div align="center">
 <a href="https://github.com/memorodz" target="_blank">
+<<<<<<< HEAD
+<img src="https://img.shields.io/badge/github-%2324292e.svg?&style=for-the-badge&logo=github&logoColor=white" alt="github" style="margin-bottom: 5px;" />
+=======
     <img src=https://img.shields.io/badge/github-%2324292e.svg?&style=for-the-badge&logo=github&logoColor=white alt="github" style="margin-bottom: 5px;" />
+>>>>>>> modificar
 </a>
 <a href="https://twitter.com/memosrdz" target="_blank">
     <img src=https://img.shields.io/badge/twitter-%2300acee.svg?&style=for-the-badge&logo=twitter&logoColor=white alt="twitter" style="margin-bottom: 5px;" />
