@@ -1,119 +1,182 @@
 ﻿using System;
 using MisCodigosTest.CodigoTest;
 using MisCodigosTest.Clases;
+using MisCodigosTest.Clases.Cadena;
 
 
-Console.WriteLine("Elige la opción ('X' o 'x' para terminar):");
 
-Console.WriteLine(@"
-    A) Ejercicio 'Clase Animal'.
-    C) Cifrado SHA256 de cadenas.
-    F) Número Fibonacci.
-    N) Números primos en un rango.
-    O) Ordenar palabras.
-    P) Ejercico 'Clase Persona'.
-    S) Sumar los dígitos del número entero.
-    T) Conversión °C / °F.
-");
-string? opcion = Console.ReadLine();
-if (string.IsNullOrEmpty(opcion) || string.IsNullOrWhiteSpace(opcion))
-    opcion = "x";
-
-while (opcion.ToLower() != "x")
+while (true)
 {
-    switch (opcion.ToLower())
+    Console.Clear();
+    Console.WriteLine("Menú de Opciones:");
+    Console.WriteLine("1. Serie Fibonacci hasta un número dado.");
+    Console.WriteLine("2. Sumar Digitos de un número entero.");
+    Console.WriteLine("3. Ordena las Palabras de una Frase.");
+    Console.WriteLine("4. Obtiene todos los números primos en un rango dado.");
+    Console.WriteLine("5. Ejercicio Persona.");
+    Console.WriteLine("6. Establece un área para mover el puntero aleatoriamente y hacer clic derecho.");
+    Console.WriteLine("7. Obtener la subcadena establecida.");
+    Console.WriteLine("8. Ejercicio Animal.");
+    Console.WriteLine("9. Impresión de Calendarios.");
+    Console.WriteLine("10. <Regex> Validación de RFC.");
+    Console.WriteLine("S. Salir.");
+    Console.Write("Selecciona una opción: ");
+
+    string? opcion = Console.ReadLine();
+
+    switch (opcion)
     {
-        case "a":
-            //Ejercicio Animal
-            EjercicioAnimal.Animales();
-            break;
-        case "c":
-            Cadena256.convertirCadenaSHA256();
-            break;
-        case "f":
+        case "1":
             //Número Fibonacci
-            Fibonacci.numFib();
+            Fibonacci.NumFib();
             break;
-        case "n":
-            //Obtiene todos los números primos en un rango dado.
-            Primos.primosRango();
+        case "2":
+            //Sumar Digitos de un número entero
+            SumaDigitosNumero.Numeros();
             break;
-        case "o":
+        case "3":
             //Ordenar Palabras de una Frase
-            PalabrasFraseOrdenar.palabrasOrdenar();
+            PalabrasFraseOrdenar.PalabrasOrdenar();
             break;
-        case "p":
+        case "4":
+            //Obtiene todos los números primos en un rango dado.
+            Primos.PrimosRango();
+            break;
+        case "5":
             //Ejercicio Persona
+            /*
+            Programa que solicita al usuario nombres de personas y los almacena en una lista de objetos de tipo Persona. Habrá dos tipos de persona: Estudiante y Profesor.
+
+            Crear la clase Persona con una propiedad Nombre de tipo string, un constructor que reciba el nombre como parámetro, y sobreescibir el método ToString()
+            imprimiendo una frase de saludo con el nombre incluido.
+
+            Crear dos clases más que hereden de la clase Persona, se llamarán Estudiante y Profesor. La clase Estudiante tiene el método Estudiar que escribe la frase: "Estoy estudiando".
+            La clase Profesor tendrá el método Explicar que debe escribir la frase: "Estoy explicando".
+
+            El programa debe leer la lista personas (Profesores y estudiantes) ya sea en lote o uno por uno, incluirlas como profesor o estudiante, y finalmente llamar a los métodos 
+            Explicar y Estudiar según el caso.
+            */
             EjercicioPersona.Personas();
             break;
-        case "s":
-            //Sumar Digitos de un número entero
-            SumaDigitosNumero.numeros();
+        case "6":
+            /*
+            Método que establece un área para mover aleatoriamente el puntero del mouse y hacer clic con el botón derecho.
+            Esto lo hará cada minuto hasta la hora configurada.
+            */
+            Moverse.Movimiento();
             break;
-        case "t":
-            Console.WriteLine(@"
-    Convertir de:
-        1) Celcius a Fahrenheit.
-        2) Fahrenheit a Celcius.
-");
-            string opt = Console.ReadLine();
-            if (opt == "1" || opt == "2")
-            {
-                switch (opt)
-                {
-                    case "1":
-                        Console.WriteLine("Dame los grados Celcius.");
-                        string gradosC = Console.ReadLine();
-                        decimal celsius = 0.0M;
-                        if(decimal.TryParse(gradosC, out celsius))
-                            Console.WriteLine($"{gradosC}°C equivalen a {TempConvert.fahrenheit(celsius).ToString("0.00")}°F\n");
-                        break;
-                    case "2":
-                        Console.WriteLine("Dame los grados Fahrenheit.");
-                        string gradosF = Console.ReadLine();
-                        decimal fahrenheit = 0.0M;
-                        if(decimal.TryParse(gradosF, out fahrenheit))
-                            Console.WriteLine($"{gradosF}°F equivalen a {TempConvert.celsiusF(fahrenheit).ToString("0.00")}°C\n");
-                        break;
-                    default:
-                        break;
-                }
-                Console.WriteLine("\nMenú principal...");
-            }
-            else Console.WriteLine("\nOpción inválida.\n");
+        case "7":
+            /*
+             Simplemente obtiene una subcadena de la cadena establecida.
+            */
+            Console.WriteLine($"Subcadena obtenida: {ObtenSubCadena.Obten()}");
+            break;
+        case "8":
+            //Ejercicio Animal
+            /*
+            Programa que implemente una clase abstracta Animal con una propiedad Nombre de tipo texto y tres métodos:
 
+            -Asignar Nombre: Recibe un nombre de tipo string.
+            -Obtener Nombre: Devuelve el nombre.
+            -Comer: Método abstracto sin parámetros.
+
+            Crear mínimo dos clases que implementen la clase Animal y  que sobreescriban el método Comer, este último método deberá imprimir una frase diferente para cada animal.
+
+            El programa debe permitir al usuario asignar un nombre al animal escogido, crear un nuevo objeto de ese tipo, y usar los métodos para obtener el nombre e indicar que 
+            está comiendo llamando al método respectivo.
+            */
+            EjercicioAnimal.Animales();
             break;
-        case "x":
-            Console.WriteLine($"Elegiste '{opcion}'.\nHasta pronto.");
+        case "9":
+            /*
+             Calendario
+                Programa que proporciona el calendario desde el año 1
+                hasta más del año 2500
+            */
+            Calendario.Imprime();
             break;
+        case "10":
+            /*
+             Validación de Registro Federal de Contribuyentes Mexicano.
+            Con formato de fecha válido, AAMMDD.
+             */
+            List<string> testRFC = new List<string>
+            {
+                "ABC9203151H2",
+                "Ñ&F841122X9C",
+                "A1B2C3D4",
+                "ABÑ910101Z1",
+                "DEF000229A2B",
+                "GHI990331T3",
+                "ABCDE0123",
+                "JKL850101R4F",
+                "1234567890",
+                "M&N940230A1",
+                "OPQ830215G6H",
+                "AB-9203151H2",
+                "RST700101M2X",
+                "XYZ000000",
+                "UVW890215P7",
+            };
+            testRFC.ForEach(rfx => {
+                if (MisCodigosTest.Metodos.Validar.ValidaRFC(rfx))
+                {
+                    Console.WriteLine($"\tEl valor de RFC {rfx} tiene formato válido.");
+                }
+                else
+                    Console.WriteLine($"\tEl formato de RFC {rfx} NO válido.");
+            });
+            break;
+        case "s":
+        case "S":
+            Console.WriteLine("\nSaliendo del programa...");
+            return;
         default:
-            Console.WriteLine($"Debes elegir una opción válida.");
+            Console.WriteLine("\nOpción no válida. Inténtalo de nuevo.");
             break;
     }
-    Console.WriteLine(@"
-    A) Ejercicio 'Clase Animal'.
-    C) Cifrado SHA256 de cadenas.
-    F) Número Fibonacci.
-    N) Números primos en un rango.
-    O) Ordenar palabras.
-    P) Ejercico 'Clase Persona'.
-    S) Sumar los dígitos del número entero.
-    T) Conversión °C / °F.
-    X) Terminar.
-");
-    opcion = Console.ReadLine();
-    if (string.IsNullOrEmpty(opcion) || string.IsNullOrWhiteSpace(opcion))
-        opcion = "x";
+
+    Console.WriteLine("\nPresiona cualquier tecla para continuar...");
+    Console.ReadKey();
 }
 
-Console.WriteLine("Adios...\nPresiona cualquier tecla.");
-Console.ReadLine();
 
 
 
 
 
 
+
+
+
+
+
+//Ejercicio Diagrama
+/*
+
+Implemente el siguiente diagrama de clases. El diagrama representa atributos públicos (+), privados (-), y protegidos (#) también como dependencias de clase y herencia.
+
+Se hace la implementación del diagrama, no se pide desarrollo de métodos.
+
+1. Se crea la clase "Forma" que actuará como clase base para las clases "Circulo" y "Rectangulo". La clase "Forma" tendrá los atributos y métodos comunes a todas las formas.
+    MisCodigosTest.Clases.Diagrama.Forma    
+    
+2. Se crea la clase "Localizacion" que representa las coordenadas x e y de una forma. Esta clase tendrá los atributos privados "x" y "y".
+    MisCodigosTest.Clases.Diagrama.Localizacion
+
+3. Se crea la clase "Rectangulo" que hereda de la clase "Forma". Esta clase tendrá los atributos protegidos "lado1" y "lado2".
+
+
+4. Se crea la clase "Circulo" que también hereda de la clase "Forma". Esta clase tendrá el atributo protegido "radio".
+
+Con estas clases implementadas, se han creado las estructuras necesarias para representar el diagrama de clases dado. 
+Ahora podemos utilizar estas clases en nuestro programa según sea necesario.
+
+IMPORTANTE: Se debe tener en cuenta que en el diagrama se muestra que la clase "Forma" tiene un atributo protegido "loc" de tipo "Localizacion". 
+Sin embargo, en el código, este atributo se declara como protegido en la clase "Forma" pero no se muestra la relación de dependencia con la clase "Localizacion". 
+Por lo tanto, se asume que la clase "Forma" tiene una relación de dependencia con la clase "Localizacion" y que el atributo "loc" se utiliza para almacenar la ubicación de la forma.
+
+*/
 
 
 
