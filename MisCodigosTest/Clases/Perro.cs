@@ -7,9 +7,9 @@ namespace MisCodigosTest.Clases
     /// </summary>
     internal class Perro : Animal
     {
-        public override void Comer()
+        public override void Comer(string? nombre)
         {
-            Console.WriteLine("El perro está comiendo sus croquetas.");
+            Console.WriteLine($"El perro {nombre} está comiendo sus croquetas.");
         }
     }
 }

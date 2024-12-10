@@ -4,6 +4,7 @@ using MisCodigosTest.Clases;
 using MisCodigosTest.Clases.Cadena;
 
 
+
 while (true)
 {
     Console.Clear();
@@ -176,7 +177,6 @@ Sin embargo, en el código, este atributo se declara como protegido en la clase 
 Por lo tanto, se asume que la clase "Forma" tiene una relación de dependencia con la clase "Localizacion" y que el atributo "loc" se utiliza para almacenar la ubicación de la forma.
 
 */
-
 
 
 

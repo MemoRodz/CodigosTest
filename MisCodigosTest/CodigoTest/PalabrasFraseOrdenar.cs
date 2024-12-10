@@ -11,6 +11,7 @@ namespace MisCodigosTest.CodigoTest
 
         public static void PalabrasOrdenar()
         {
+
             try
             {
                 Console.WriteLine("Ingrese una frase:");
@@ -19,6 +20,10 @@ namespace MisCodigosTest.CodigoTest
                 {
                     // Dividir la frase en palabras
                     string[] palabras = frase.Split(' ');
+
+            Console.WriteLine("Ingrese una frase:");
+            string? frase = Console.ReadLine();
+
 
                     // Ordenar las palabras alfabéticamente
                     Array.Sort(palabras);
@@ -31,11 +36,18 @@ namespace MisCodigosTest.CodigoTest
                 }
                 else Console.WriteLine("No hay frase para ordenar.");
 
+
             }
             catch (Exception)
             {
                 Console.WriteLine("No hay palabras para ordenar.");
             }
+
+            // Mostrar la frase ordenada
+            Console.WriteLine("Frase ordenada: " + fraseOrdenada);
+
+            Console.WriteLine("\nMenú principal...");
+
         }
         /*
          using System;
