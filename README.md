@@ -6,7 +6,7 @@
 
 <div align="justify">
     He actualizado un poco el código, ahora en el program he puesto un menú de opciones que permitiran llamar a los métodos al ingresar la opción válida.
-<br>También agregue más opciones.
+<br>También agregue más opciones. También uso un código en Visual Basic .Net en el proyecto en C#.
 </div>
 
 📌 1. Números de Fibonacci. 
@@ -60,6 +60,12 @@ Explicar y Estudiar según el caso.
 📌 9. Calendario. Imprime en pantalla el calendario desde el año 1 hasta más del año 2500.
 
 📌 10. Validación de Registro Federal de Contribuyentes Mexicano, formato de fecha AAMMDD.
+
+📌 11. Conversión de número a PESOS Mexicanos.
+<div align="justify">
+        🔖 Lo interesante es que en un proyecto en C#, se usa una librería construida en Visual Basic .Net
+        🔖 Gracias a http://exceltotal.com/ por compartir el código de conversión en Visual Basic .Net
+</div>
 
 📌 😣. Implementación de diagrama en código. Aún estoy esperando a la inspiración.
 
@@ -121,11 +127,7 @@ class Circulo{
 
 <div align="center">
 <a href="https://github.com/memorodz" target="_blank">
-<<<<<<< HEAD
-<img src="https://img.shields.io/badge/github-%2324292e.svg?&style=for-the-badge&logo=github&logoColor=white" alt="github" style="margin-bottom: 5px;" />
-=======
     <img src=https://img.shields.io/badge/github-%2324292e.svg?&style=for-the-badge&logo=github&logoColor=white alt="github" style="margin-bottom: 5px;" />
->>>>>>> modificar
 </a>
 <a href="https://twitter.com/memosrdz" target="_blank">
     <img src=https://img.shields.io/badge/twitter-%2300acee.svg?&style=for-the-badge&logo=twitter&logoColor=white alt="twitter" style="margin-bottom: 5px;" />
