@@ -64,7 +64,15 @@ while (true)
             Método que establece un área para mover aleatoriamente el puntero del mouse y hacer clic con el botón derecho.
             Esto lo hará cada minuto hasta la hora configurada.
             */
-            Moverse.Movimiento();
+            Console.Write("\nDame la hora (formato 24 horas) en que se detendrá el proceso:\t");
+            string hrLimite = Console.ReadLine() ?? string.Empty;
+
+            if (!int.TryParse(hrLimite, out int limiteHora))
+            {
+                limiteHora = (DateTime.Now.Hour + 1) % 24;
+            }
+            Console.WriteLine($"Se detendrá hasta las {limiteHora}:00 hrs.");
+            Moverse.Movimiento(limiteHora);
             break;
         case "7":
             /*
